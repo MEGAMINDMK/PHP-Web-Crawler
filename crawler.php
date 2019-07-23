@@ -14,8 +14,6 @@
 <p>&bull; Sites with https wont be displayed</p>
 <p>&bull; All links crawled will get inserted to database automatically</p>
 <p>&bull; To fix site without keywords shall be applied manually from Database</p>
-<a href='https://web-net.000webhostapp.com/search/' class='btn btn-outline-warning'>Go Back</a>
-<a href='https://web-net.000webhostapp.com/search/view.php' class='btn btn-outline-warning'>View Database</a>
 </center>
 
 
