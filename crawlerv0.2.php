@@ -70,8 +70,8 @@ function get_details($s_link) {
 	<?php echo 'link:<font color="green">'.$s_link.'</font>'; ?><br>
 	<?php echo 'description:'.$s_des.''; ?><br>
 	<?php echo "keywords: ".addslashes("", "", $s_key).""; ?><br><br><br><hr>*/
-	      echo '<div class="relative"><font color="blue">'.$s_title.'</font>';?><br>
-	<?php echo '<a href="'.$s_link.'"><font color="green">'.$s_link.'</font></a>'; ?><br>
+	      echo '<a href="'.$s_link.'"><div class="relative"><font color="blue">'.$s_title.'</font></a>';?><br>
+	<?php echo '<font color="green">'.$s_link.'</font>'; ?><br>
 	<?php echo '<font color="gray">'.$s_des.'</font>'; ?><br>
 	<?php echo '<font color="red">'.$s_key.'</font></div>'; ?><br>
 	<?php
