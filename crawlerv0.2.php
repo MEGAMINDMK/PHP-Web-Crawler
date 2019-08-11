@@ -12,7 +12,6 @@
 </form>
 <p>Remember spaces between keywords are not allowed, try special characters like /, _, %20%, +</p>
 <a href='./' class='btn btn-outline-warning'>Go Back</a>
-<a href='view.php' class='btn btn-outline-warning'>View Database</a>
 </center>
 
 
