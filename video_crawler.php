@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-    define("MAX_RESULTS", 40);
+    define("MAX_RESULTS", 16);
     
      if (isset($_GET['search_button']) )
      {
@@ -113,7 +113,7 @@ error_reporting(0);
 </div>										
 <div class="col-sm-6" style="margin-left:15px">						
 <div class="input-group" style="margin-top:10px">							
-<input type="text" class="form-control" type="search" id="search" name="search">							
+<input type="text" class="form-control" type="search" id="search" name="search" placeholder="Example Google+Database">&nbsp;						
 <span class="input-group-btn">								
 <input class="btn btn-outline-danger" type="submit" name="search_button" value="search !">							
 </span>						
@@ -133,7 +133,7 @@ error_reporting(0);
                                          
               if (!empty($search))
               {
-                $apikey = 'your youtube api key here'; 
+             $apikey = 'AIzaSyCKMpw2nmPnon_gkh4EIXnbiAmrZNw-v4M';
                 $googleApiUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' . $search . '&maxResults=' . MAX_RESULTS . '&key=' . $apikey;
 
                 $ch = curl_init();
@@ -163,7 +163,7 @@ error_reporting(0);
     
                         <div class="video-tile">
                         <div  class="videoDiv">
-<iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId; ?> data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>                     
+<iframe id="iframe" style="width:100%;height:100%" src="https://www.youtube.com/embed/<?php echo $videoId; ?>" frameborder="0" allowfullscreen></iframe>                     
                         </div>
                         <div class="videoInfo">
                         <div class="videoTitle"><b><?php echo $title; ?></b></div>
@@ -178,3 +178,10 @@ error_reporting(0);
             ?> 
             
         </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){ 
+	$('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+    }); 
+</script>
