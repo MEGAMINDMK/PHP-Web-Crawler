@@ -30,7 +30,8 @@ ini_set('max_execution_time', 120);
 
 $starting = $_GET["q"];
 $start = 'https://www.google.com/search?q='.$starting.'';
-$start = 'https://www.bing.com/search?q='.$starting.'&qs=n&form=QBRE';
+//$start = 'https://www.bing.com/search?q='.$starting.'&qs=n&form=QBRE';
+$start = 'https://www.bing.com/search?q='.$starting.'&go=Search&qs=ds&form=QBRE';
 $start = 'https://yandex.com/search/?text='.$starting.'&lr=114007';
 $start = 'https://search.yahoo.com/search?p='.$starting.'&fr2=piv-web';
 //$start = 'https://www.youtube.com/results?search_query='.$starting.'';
